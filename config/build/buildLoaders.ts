@@ -42,5 +42,5 @@ export function buildLoaders(isDev: BuildOptions['isDev']): RuleSetRule[] {
 		exclude: /node_modules/,
 	};
 
-	return [typescriptLoader, cssLoader];
+	return [fileLoader, svgLoader, typescriptLoader, cssLoader];
 }
